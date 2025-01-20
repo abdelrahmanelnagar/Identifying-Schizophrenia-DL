@@ -4,8 +4,7 @@ This repository contains code for identifying schizophrenia using a deep learnin
 
 ## Paper Details
 - **Paper Title**: Identifying Schizophrenia Using Structural MRI With a Deep Learning Algorithm
-- **Paper Link**: [Identifying Schizophrenia Using Structural MRI With a Deep Learning Algorithm](https://example.com) *(replace with actual link)*
-
+- **Paper Link**: [[Identifying Schizophrenia Using Structural MRI With a Deep Learning Algorithm](https://www.frontiersin.org/journals/psychiatry/articles/10.3389/fpsyt.2020.00016/full)]
 ---
 
 ## Model Details
@@ -61,7 +60,7 @@ The dataset is available on [OpenNeuro](https://openneuro.org) and contains rest
 For this project, we used only the data from **sub-1** (nonsmoking schizophrenia patients) and **sub-3** (nonsmoking healthy controls). The data is organized in NIfTI format and includes metadata for each participant.
 
 ### Steps to Download the Dataset
-1. Visit the dataset link: [OpenNeuro Dataset](https://openneuro.org).
+1. Visit the dataset link: [[OpenNeuro Dataset](https://openneuro.org/datasets/ds001461/versions/1.0.3)]
 2. Click on the "Download Dataset" button.
 3. Choose "All Files" or the specific folders you need.
 
@@ -69,20 +68,20 @@ For this project, we used only the data from **sub-1** (nonsmoking schizophrenia
 Identifying-Schizophrenia-DL/
 │
 ├── notebooks/
-│ └── Identifying-Schizophrenia-Using-DL.ipynb # Main Jupyter notebook for training and evaluation
+│   └── Identifying-Schizophrenia-Using-DL.ipynb  # Main Jupyter notebook for training and evaluation
 │
 ├── models/
-│ └── (Saved model architecture and weights)
+│   └── (Saved model architecture and weights)
 │
 ├── data/
-│ └── (Placeholder for the dataset; follow the download steps above)
+│   └── (Placeholder for the dataset; follow the download steps above)
 │
 ├── results/
-│ └── (Visualizations, metrics, and logs from the training process)
+│   └── (Visualizations, metrics, and logs from the training process)
 │
-├── README.md # This file
-├── requirements.txt # List of dependencies
-└── LICENSE # License file
+├── README.md  # This file
+├── requirements.txt  # List of dependencies
+└── LICENSE  # License file
 
 # Dependencies
 
