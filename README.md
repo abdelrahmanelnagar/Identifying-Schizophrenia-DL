@@ -39,21 +39,51 @@ data: Placeholder for the dataset (not included in the repository; follow the do
 
 results: Contains visualizations, metrics, and logs from the training process.
 
-# Model Details
+## Model Details
 
-Model Architecture:
+### Architecture
+The model is a 3D CNN with the following architecture:
+- **Input Shape**: `(32, 32, 16, 120)` (Depth, Height, Width, Time)
+- **Layers**:
+  1. Conv3D (16 filters, kernel size `(3, 3, 3)`, ReLU activation)
+  2. MaxPooling3D (pool size `(2, 2, 2)`)
+  3. BatchNormalization
+  4. Dropout (0.25)
+  5. Conv3D (32 filters, kernel size `(3, 3, 3)`, ReLU activation)
+  6. MaxPooling3D (pool size `(2, 2, 2)`)
+  7. BatchNormalization
+  8. Dropout (0.25)
+  9. Flatten
+  10. Dense (128 units, ReLU activation, L2 regularization)
+  11. Dropout (0.5)
+  12. Dense (1 unit, sigmoid activation)
 
-Input Layer: 3D fMRI data.
+### Training Details
+- **Optimizer**: Adam
+- **Loss Function**: Binary Cross-Entropy
+- **Metrics**: Accuracy
+- **Batch Size**: 8
+- **Epochs**: 50
+- **Callbacks**:
+  - ReduceLROnPlateau (factor=0.2, patience=5, min_lr=0.001)
+  - EarlyStopping (patience=10, restore_best_weights=True)
 
-Convolutional Layers: 3 layers with ReLU activation.
+### Performance
+- **Accuracy**: 75%
+- **Precision**:
+  - Healthy: 0.67
+  - Diseased: 0.80
+- **Recall**:
+  - Healthy: 0.67
+  - Diseased: 0.80
+- **F1-Score**:
+  - Healthy: 0.67
+  - Diseased: 0.80
 
-Pooling Layers: Max pooling for feature reduction.
-
-Dense Layers: Fully connected layers with dropout for regularization.
-
-Output Layer: Softmax for classification (schizophrenia vs. control).
-
-Model Input: Preprocessed 3D fMRI data tensors.
+## Dataset
+The dataset contains fMRI data from:
+- **Healthy Controls**: Subjects 301 to 312
+- **Diseased Subjects**: Subjects 101 to 125
 
 # Dependencies
 Python Version
