@@ -67,18 +67,23 @@ For this project, we used only the data from **sub-1** (nonsmoking schizophrenia
 ## Repository Structure
 Identifying-Schizophrenia-DL/
 │
+
 ├── notebooks/
-│   └── Identifying-Schizophrenia-Using-DL.ipynb  # Main Jupyter notebook for training and evaluation
+│└── Identifying-Schizophrenia-Using-DL.ipynb  # Main Jupyter notebook for training and evaluation
 │
+
 ├── models/
 │   └── (Saved model architecture and weights)
 │
+
 ├── data/
 │   └── (Placeholder for the dataset; follow the download steps above)
 │
+
 ├── results/
 │   └── (Visualizations, metrics, and logs from the training process)
 │
+
 ├── README.md  # This file
 ├── requirements.txt  # List of dependencies
 └── LICENSE  # License file
