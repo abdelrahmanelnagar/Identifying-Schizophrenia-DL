@@ -1,48 +1,17 @@
-# Identifying-Schizophrenia-DL
-This project aims to identify schizophrenia using a deep learning model trained on resting-state fMRI data from the OpenNeuro dataset.
+# Identifying Schizophrenia Using Deep Learning and fMRI Data
 
-# Paper Details
-Paper Title: Identifying Schizophrenia Using Structural MRI With a Deep Learning Algorithm
+This repository contains code for identifying schizophrenia using a deep learning model trained on resting-state fMRI data from the OpenNeuro dataset.
 
-Paper Link: [Identifying Schizophrenia Using Structural MRI With a Deep Learning Algorithm](https://www.frontiersin.org/journals/psychiatry/articles/10.3389/fpsyt.2020.00016/full)
+## Paper Details
+- **Paper Title**: Identifying Schizophrenia Using Structural MRI With a Deep Learning Algorithm
+- **Paper Link**: [Identifying Schizophrenia Using Structural MRI With a Deep Learning Algorithm](https://example.com) *(replace with actual link)*
 
-# Dataset
-The dataset is available on OpenNeuro and contains resting-state fMRI data.
-
-The dataset includes structural MRI scans divided into the following groups:
-
-sub-1: Nonsmoking schizophrenia patients.
-
-sub-2: Smoking schizophrenia patients.
-
-sub-3: Nonsmoking healthy controls.
-
-sub-4: Smoking healthy controls.
-
-For this project, we used only the data from sub-1 and sub-3 (nonsmoking schizophrenia patients and nonsmoking healthy control). The data is organized in NIfTI format and includes metadata for each participant.
-
-
-Steps to Download the Dataset
-
-1- Visit the dataset link: [OpenNeuro Dataset.](https://openneuro.org/datasets/ds001461/versions/1.0.3)
-
-2- Click on the "Download Dataset" button.
-
-3- Choose "All Files" or the specific folders you need.
-
-# Repository Structure
-notebooks: Contains the main Jupyter notebook for training and evaluation (Identifying-Schizophrenia-Using-DL.ipynb).
-
-models: Saved model architecture and weights.
-
-data: Placeholder for the dataset (not included in the repository; follow the download steps above).
-
-results: Contains visualizations, metrics, and logs from the training process.
+---
 
 ## Model Details
 
 ### Architecture
-The model is a 3D CNN with the following architecture:
+The model is a 3D Convolutional Neural Network (CNN) with the following architecture:
 - **Input Shape**: `(32, 32, 16, 120)` (Depth, Height, Width, Time)
 - **Layers**:
   1. Conv3D (16 filters, kernel size `(3, 3, 3)`, ReLU activation)
@@ -80,13 +49,42 @@ The model is a 3D CNN with the following architecture:
   - Healthy: 0.67
   - Diseased: 0.80
 
+---
+
 ## Dataset
-The dataset contains fMRI data from:
-- **Healthy Controls**: Subjects 301 to 312
-- **Diseased Subjects**: Subjects 101 to 125
+The dataset is available on [OpenNeuro](https://openneuro.org) and contains resting-state fMRI data. It includes structural MRI scans divided into the following groups:
+- **sub-1**: Nonsmoking schizophrenia patients.
+- **sub-2**: Smoking schizophrenia patients.
+- **sub-3**: Nonsmoking healthy controls.
+- **sub-4**: Smoking healthy controls.
+
+For this project, we used only the data from **sub-1** (nonsmoking schizophrenia patients) and **sub-3** (nonsmoking healthy controls). The data is organized in NIfTI format and includes metadata for each participant.
+
+### Steps to Download the Dataset
+1. Visit the dataset link: [OpenNeuro Dataset](https://openneuro.org).
+2. Click on the "Download Dataset" button.
+3. Choose "All Files" or the specific folders you need.
+
+## Repository Structure
+Identifying-Schizophrenia-DL/
+│
+├── notebooks/
+│ └── Identifying-Schizophrenia-Using-DL.ipynb # Main Jupyter notebook for training and evaluation
+│
+├── models/
+│ └── (Saved model architecture and weights)
+│
+├── data/
+│ └── (Placeholder for the dataset; follow the download steps above)
+│
+├── results/
+│ └── (Visualizations, metrics, and logs from the training process)
+│
+├── README.md # This file
+├── requirements.txt # List of dependencies
+└── LICENSE # License file
 
 # Dependencies
-Python Version
 
 Python 3.8+
 
