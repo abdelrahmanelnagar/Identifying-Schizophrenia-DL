@@ -4,7 +4,7 @@ This project aims to identify schizophrenia using a deep learning model trained 
 # Paper Details
 Paper Title: Identifying Schizophrenia Using Structural MRI With a Deep Learning Algorithm
 
-Paper Link: Identifying Schizophrenia Using Structural MRI With a Deep Learning Algorithm
+Paper Link: [Identifying Schizophrenia Using Structural MRI With a Deep Learning Algorithm](https://www.frontiersin.org/journals/psychiatry/articles/10.3389/fpsyt.2020.00016/full)
 
 # Dataset
 The dataset is available on OpenNeuro and contains resting-state fMRI data.
@@ -19,12 +19,12 @@ sub-3: Nonsmoking healthy controls.
 
 sub-4: Smoking healthy controls.
 
-For this project, we used only the data from sub-1 (nonsmoking schizophrenia patients). The data is organized in NIfTI format and includes metadata for each participant.
+For this project, we used only the data from sub-1 and sub-3 (nonsmoking schizophrenia patients and nonsmoking healthy control). The data is organized in NIfTI format and includes metadata for each participant.
 
 
 Steps to Download the Dataset
 
-1- Visit the dataset link: OpenNeuro Dataset.
+1- Visit the dataset link: [OpenNeuro Dataset.](https://openneuro.org/datasets/ds001461/versions/1.0.3)
 
 2- Click on the "Download Dataset" button.
 
