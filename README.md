@@ -50,6 +50,19 @@ The model is a 3D Convolutional Neural Network (CNN) with the following architec
 
 ---
 
+## Results
+
+### Classification Report
+![Classification Report](results/output%20for%20all%20nonsmoking(h&d).png)
+
+### Predicted vs True Labels
+![Predicted vs True Labels](results/predicted-true%20label.png)
+
+### Training History
+![Training History](results/Training%20History.png)
+
+---
+
 ## Dataset
 The dataset is available on [OpenNeuro](https://openneuro.org) and contains resting-state fMRI data. It includes structural MRI scans divided into the following groups:
 - **sub-1**: Nonsmoking schizophrenia patients.
